@@ -13,6 +13,7 @@ sudo echo "<h1>Hello ALX!</h1>" > /data/web_static/releases/test/index.html
 addLink="\tlocation /hbnb_static {\n\t\talias /data/web_static/current/;\n\t}"
 sudo rm -f /data/web_static/current
 sudo ln -s /data/web_static/releases/test/ /data/web_static/current
+sudo chown -R $USER:$USER /data/web_static/current
 
 sudo sed -i "25i\ $addLink" /etc/nginx/sites-available/default
 
