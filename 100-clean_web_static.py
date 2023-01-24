@@ -7,7 +7,7 @@ from web_static content folder
 from fabric.api import env, local, put, run
 from datetime import datetime
 from os.path import exists, isdir
-env.hosts = ['34.73.133.125', '52.201.252.232']
+env.hosts = ['3.86.13.57', '54.89.30.237']
 
 
 def local_clean(number=0):
