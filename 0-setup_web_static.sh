@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Prepare your web servers
 
-apt-get update
-apt-get -y install nginx
-ufw allow 'Nginx HTTP'
+sudo apt-get update -y
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
 
 sudo mkdir -p /data/web_static/shared/
 sudo mkdir -p /data/web_static/releases/test/
