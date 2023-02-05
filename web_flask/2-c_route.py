@@ -1,0 +1,30 @@
+#!/usr/bin/python3
+"""
+a script that starts a Flask web application
+C is fun!
+"""
+
+
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route("/", strict_slashes=False)
+def hello():
+    return "Hello HBNB!"
+
+
+@app.route("/hbnb", strict_slashes=False)
+def hellohbnb():
+    return "HBNB"
+
+
+@app.route("/c/<text>", strict_slashes=False)
+def c_fun(text):
+    value = text.replace("_", " ")
+    return (f"C {value}")
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
