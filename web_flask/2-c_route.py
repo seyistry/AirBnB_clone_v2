@@ -23,7 +23,7 @@ def print_hbnb():
 @app.route("/c/<text>", strict_slashes=False)
 def print_c_fun(text):
     value = text.replace("_", " ")
-    return "C %s" %value
+    return "C %s" % value
 
 
 if __name__ == '__main__':
