@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-a script that starts a Flask web application
-C is fun!
+a script that starts a Flask web
+application. C is fun!
 """
 
 
@@ -11,19 +11,19 @@ app = Flask(__name__)
 
 
 @app.route("/", strict_slashes=False)
-def hello():
+def print_hello():
     return "Hello HBNB!"
 
 
 @app.route("/hbnb", strict_slashes=False)
-def hellohbnb():
+def print_hbnb():
     return "HBNB"
 
 
 @app.route("/c/<text>", strict_slashes=False)
-def c_fun(text):
+def print_c_fun(text):
     value = text.replace("_", " ")
-    return (f"C {value}")
+    return "C %s" %value
 
 
 if __name__ == '__main__':
