@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-List of states 
+List of states
 """
 from models import storage
 from models.state import State
